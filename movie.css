@@ -14,6 +14,7 @@ body{
 header{
     height: 100vh;
     background-image: url("https://wallpapercave.com/wp/wp6319615.jpg");
+    background-position: center;
     background-size: cover;
     position: relative; 
     color:#fff;
@@ -71,6 +72,7 @@ nav #but{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .wrapper .search_box{
@@ -119,14 +121,7 @@ nav #but{
     font-size: 1.1em;
     border-radius: 3px;
 }
-.wrapper .search_box .dropdown:before{
-    content: "";
-    position: absolute;
-    top:8px;
-    right: 10px;
-    border: 8px solid;
-    border-color: black transparent transparent transparent;
-}
+
 .wrapper .search_box .dropdown a{
     text-decoration: none;
     color: #000;
@@ -221,12 +216,13 @@ footer .fa-heart{
         left: 0;
         opacity:0.6;
     }  
+    
     .image{
         padding: 0.6%;
         margin-left: 10px;
     }
     .image :hover{
-        transform: scale(1.15);
+        transform: scale(1.06);
     }
     .wrapper .search_box .dropdown{
         width:10vw;
@@ -246,15 +242,7 @@ footer .fa-heart{
     .wrapper .search_box .dropdown .default_option{
         font-size: 1.1em;
      }
-    .wrapper .search_box .dropdown:before{
-        content: "";
-        position: absolute;
-        top:8px;
-        right: 30px;
-        border: 8px solid;
-        border-color: black transparent transparent transparent;
     
-    }
     .wrapper .search_box .search_field{
         padding-left: 10px;
         padding-right: 0;
@@ -267,4 +255,10 @@ footer .fa-heart{
         font-size: 0.9em;
     }
     
+}
+@media (max-width:750px){
+#im{
+    margin-left: 9%;
+}
+
 }
