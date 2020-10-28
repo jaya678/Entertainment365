@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{  margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    outline: none;
+    list-style: none;
+}           
+body{
+    background-color:black;
+    font-family: Poppins,sans-serif;
+    margin:0;
+}
+
+header{
+    height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp6319615.jpg");
+    background-size: cover;
+    position: relative; 
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;   
+}
+header::after{
+    content:'';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    opacity:0.1;
+}          
+nav{
+    background-color: #d8cb11;
+    background-image: linear-gradient(to right, rgb(236, 236, 22),rgba(12, 12, 12,0.7));
+    color:#fff;
+    padding:10px;
+    display: flex;
+    justify-content:first baseline;
+    position: absolute;;
+    top:0;
+    left:0;
+    right: 0;
+    z-index:100;
+   
+}
+.nav{
+    text-decoration: none;
+    padding:0.5em;
+    color: black;
+    font-size: 1.2em;
+
+}
+nav #but{
+    margin-right: 10px;
+    border:1px solid black;  
+    border-radius: 3px;
+    font-size: 1.7em;
+    padding: 0.5%;
+    margin-left: 10px;
+    background:linear-gradient(gold,rgba(119, 80, 80,0.2));
+    text-decoration: none;
+    color: black;
+    
+}
+.wrapper{
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .search_box{
+    width: 80vw;
+    height: 30px;;
+    color: black;
+    background:gold;
+    border-radius: 15px;
+    display:flex;
+    padding: 4.5px 20px;
+    box-shadow: 0 8px 6px -10px #fff;
+}
+
+.wrapper .search_box .dropdown{
+    width:15vw;
+    border-right: 2px solid black;
+    position: relative;
+    cursor: pointer;
+}
+.wrapper .search_box .dropdown ul{
+   position: absolute;
+   top:30px;
+   left: -10px;
+   background: #fff;
+   width:15vw;
+   border-radius: 5px;
+   padding: 2.5% 6%;
+   box-shadow: 8px 8px 6px -10px grey;
+   display: none;
+}
+.wrapper .search_box .dropdown ul.active{
+    display: block;
+}
+.wrapper .search_box .dropdown ul li{
+    padding-bottom: 8px;
+    user-select: none;
+}
+.wrapper .search_box .dropdown .default_option{
+    user-select: none;
+}
+.wrapper .search_box .dropdown ul li:last-child{
+    padding-bottom: 0;
+}
+.wrapper .search_box .dropdown ul li:hover{
+    background-color: rgba(101, 104, 101,0.2);
+    font-size: 1.1em;
+    border-radius: 3px;
+}
+.wrapper .search_box .dropdown:before{
+    content: "";
+    position: absolute;
+    top:8px;
+    right: 10px;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+}
+.wrapper .search_box .dropdown a{
+    text-decoration: none;
+    color: #000;
+}
+.wrapper .search_box .dropdown .default_option{
+    font-size: 0.9em;
+}
+.wrapper .search_box .search_field{
+    padding-left: 10px;
+    padding-right: 0;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper .search_box .search_field .input{
+    width:100%;
+    height: 100%;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 4px;
+    margin-left: 20px;
+}
+.wrapper .search_box .search_field .fas{
+    position: relative;
+    top:0.2em;
+}
+.wrapper{
+    color:white;
+}
+::-webkit-input-placeholder{
+    color:grey;
+}
+::-moz-input-placeholder{
+    color:grey;
+}
+::-ms-input-placeholder{
+    color:grey;
+}
+img{
+    
+    width: 220px;
+    height: 200px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.image{
+    padding: 1%;
+    margin: 8px auto;
+    
+}
+.image :hover{
+    transform: scale(1.15);
+}
+
+footer{
+    background-color: #d8cb11;
+    background-image: linear-gradient(to right, rgb(236, 236, 22),rgba(12, 12, 12,0.7));
+    color:#000;
+    padding:10px;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 15px;;
+}
+
+footer .fa-heart{
+    color:rgb(221, 31, 31);
+}
+
+
+@media (min-width:750px){
+    header{
+        height: 100vh;
+        background-image: url("https://www.bollywoodhungama.com/wp-content/uploads/2019/09/Box-Office-Chhichhore-jumps-huge-on-Saturday-collects-12.25-cr..jpg");
+        background-size: cover;
+        position: relative; 
+        color:#fff;
+        display:flex;
+        align-items: center;
+        justify-content: center;  
+        flex-direction: column;   
+    }
+    header::after{
+        content:'';
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right:0;
+        bottom: 0;
+        left: 0;
+        opacity:0.6;
+    }  
+    .image{
+        padding: 0.6%;
+        margin-left: 10px;
+    }
+    .image :hover{
+        transform: scale(1.15);
+    }
+    .wrapper .search_box .dropdown{
+        width:10vw;
+        border-right: 2px solid black;
+        position: relative;
+        cursor: pointer;
+    }
+    .wrapper .search_box .dropdown ul{
+       position: absolute;
+       top:30px;
+       left: -10px;
+       background: #fff;
+       width:10vw;
+       border-radius: 5px;
+       padding: 2.5% 7%;
+    } 
+    .wrapper .search_box .dropdown .default_option{
+        font-size: 1.1em;
+     }
+    .wrapper .search_box .dropdown:before{
+        content: "";
+        position: absolute;
+        top:8px;
+        right: 30px;
+        border: 8px solid;
+        border-color: black transparent transparent transparent;
+    
+    }
+    .wrapper .search_box .search_field{
+        padding-left: 10px;
+        padding-right: 0;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .wrapper .search_box .dropdown .default_option{
+        font-size: 0.9em;
+    }
+    
+}

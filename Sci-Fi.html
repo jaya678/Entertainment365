@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sci-Fi</title>
+        <link rel="stylesheet" href="assets/stylesheets/movie.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".default_option").click(function(){
+                    $(".dropdown ul").toggleClass("active");
+                });
+                $(".dropdown ul li").click(function(){
+                    var text= $(this).text();
+                    $(".default_option").text(text);
+                });
+            });
+        </script>
+    </head>
+    <body>
+            <nav id="navbar">
+                <a href="Entertainment_365.html" id="but">365</a>
+                <a href="movie.html" class="nav">Movies</a>
+                <a href="#" class="nav"> TV series</a>
+                <a href="#" class="nav"> Audio</a>
+            </nav>
+            <header id="movie">    
+            </header>
+            <section >
+              <div class="wrapper">
+                <div class="search_box">
+                  <div class="dropdown">
+                      <div class="default_option">Sci-Fi</div>
+                      <ul>
+                        <li><a href="All.html">ALL</a></li>
+                        <li><a href="action.html">Action</a></li>
+                        <li><a href="Drama.html">Drama</a></li>
+                        <li><a href="Sci-Fi.html">Sci-Fi</a></li>
+                      </ul>
+                  </div>
+                  <div class="search_field">
+                      <input type="text" class="input" placeholder="Search your favorite movie title">
+                      <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="image">
+               <img class="image" src="https://d18hry5vavz86j.cloudfront.net/BlogImages/107cbe45-937f-46be-888b-08e530c76e9c.jpg" alt="">
+               <img class="image" src="https://qph.fs.quoracdn.net/main-qimg-e4a584088021871ea232e2546263f94a" alt="">
+               <img class="image" src="https://i.pinimg.com/originals/55/88/db/5588db4ef4873a67b865d5884f28e96a.jpg" alt="">
+               <img class="image" src="https://images.financialexpress.com/2017/07/DFgWiOOXoAACCbX.jpg" alt="">
+               <img class="image" src="https://i.ytimg.com/vi/IjisMs_8FnY/maxresdefault.jpg" alt="">
+            </section>
+            <footer>Made with <i class="fas fa-heart"></i> by Jayashree Ghosh</footer>
+    </body>
+    </html>
