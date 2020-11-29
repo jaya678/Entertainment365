@@ -67,17 +67,23 @@ nav #but{
   margin-left: 1%;
   padding: 1%;
 }
+.image{
+    transition: tranform 0.8s ease-in-out;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
 .image :hover{
     transform: scale(1.08);
+
 }
 
 img{
-    
     width: 35vw;
     height: 20vh;
-    margin-left: 7%;
-    margin-top: 10px;
-    
+    margin:2%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(54, 54, 54);
 }
 
 footer{
